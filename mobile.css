@@ -63,8 +63,13 @@
         max-width: 100%;
     }
 
+    .web_container{
+        align-items: stretch;
+    }
+    
     .web_container--site{
         gap: 40px;
+        padding: 80px 20px;
     }
 
     .navbar-list{
@@ -106,6 +111,16 @@
     header{
         justify-content: center !important;
     }
+
+    .banner_container video{
+        height: 100%;
+        width: auto;
+        position: absolute;
+        top: 0;
+        left: -130px;
+        z-index: 0;
+    }
+    
 
     .navbar-list{
         display: none !important;
