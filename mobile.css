@@ -1,0 +1,197 @@
+@media (max-width: 500px){
+    :root{
+        --border: 16px;
+        --container-width: 100%;
+        --border-mobile: 16px;
+        --primary: #E30613;
+        --primary-300: #a30712;
+        --primary-700: #74F1F1;
+        --grey: #202020;
+        --border-green: #D3F4F4;
+        --size_card_youtube: 320px;
+    }
+
+
+    h1{
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+    
+    }
+    
+    
+    h2{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+    
+    }
+    
+    h3{
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+    
+    h4{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    
+    
+    h5{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+    
+    h6{
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    
+    p{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    
+    }
+
+    body, .web-container{
+        max-width: 100%;
+    }
+
+    .web_container--site{
+        gap: 40px;
+    }
+
+    .navbar-list{
+        flex-direction: column;
+    }
+
+    .banner_container{
+        height: 450px;
+        padding: var(--padding-mobile);
+        border: 1px solid #FEEACD;
+    }
+    .banner-title{
+        width: 100%;
+        text-align: left;
+        align-items: flex-start
+    }
+
+    .banner-title h1{
+        width: 240px;
+    }
+
+    .banner-title h5{
+        width: 200px;
+    }
+
+    .banner_buttons{
+        flex-direction: column;
+        width: 100%;
+    }
+    .banner_buttons a{
+        width: 100%;
+    }
+
+
+    .navbar{
+        padding: 16px;
+    }
+
+    header{
+        justify-content: center !important;
+    }
+
+    .navbar-list{
+        display: none !important;
+        flex-direction: row;
+        gap: 10px !important;
+        padding: 0px !important;
+    }
+
+    .boton-agendar{
+        display: grid;
+        place-content: center;
+        width: 100%;
+        padding: 10px;
+        /* background-color: white; */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    .card__conoce-productos--container{
+        flex-direction: column;
+        height: auto;
+        overflow: hidden;
+    }    
+
+    .card__conoce-productos--container>img{
+        width: 100%;
+    }    
+
+    .acerca-de-erika{
+        flex-direction: column-reverse;
+    }
+
+    .acerca-de-erika>img{
+        width: 100%;
+    }
+
+    .acerca-de-erika{
+        gap: 30px;
+    }
+
+    .acerca-de-erika__textos>img{
+        width: 90px;
+    }
+
+    
+    .cards__section{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .card__container{
+        height: auto;
+        text-align: center;
+    }
+
+    .buttons_row{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .buttons_row>.btn{
+        width: 100%;
+    }
+
+    .videos__row{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .card_video{
+        gap: 12px;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    .footer_container{
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .navbar-content>a{
+        display: none;
+    }
+}
