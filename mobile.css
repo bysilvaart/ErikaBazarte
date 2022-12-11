@@ -77,22 +77,43 @@
     }
 
     .banner_container{
-        height: 450px;
+        height: 520px;
         padding: var(--padding-mobile);
         border: 1px solid #FEEACD;
     }
+
+    .banner_container h1{
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 700;
+    
+    }
+    
+    
+    .banner_container h2{
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 700;
+    
+    }
+    
+    .banner_container h3{
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 700;
+    }
+    
+    .banner_container h4{
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
     .banner-title{
         width: 100%;
         text-align: left;
-        align-items: flex-start
-    }
-
-    .banner-title h1{
-        width: 240px;
-    }
-
-    .banner-title h5{
-        width: 200px;
+        align-items: flex-start;
+        padding: 16px;
     }
 
     .banner_buttons{
