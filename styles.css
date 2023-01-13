@@ -434,12 +434,12 @@ section{
     overflow: hidden;
     
     width: var(--size_card_youtube);
-    height: var(--size_card_youtube);
+    height: auto;
 }   
 
 .card_video>a>img{
     width: var(--size_card_youtube);
-    position: absolute;
+    /* position: absolute; */
     top: 0px;
     left: 0px;
     z-index: 1;
@@ -452,7 +452,7 @@ section{
     top: 0px;
     left: 0px;
     width: var(--size_card_youtube);
-    height: var(--size_card_youtube);
+    height: 100%;
     z-index: 2;
 
     background: linear-gradient(0deg, rgba(254, 69, 69, 0.2), rgba(254, 69, 69, 0.2)), radial-gradient(62.5% 62.5% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
