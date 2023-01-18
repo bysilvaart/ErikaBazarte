@@ -529,7 +529,6 @@ footer{
     text-decoration: none;
     cursor: pointer;
     width: auto;
-    transition: 0.6s;
 
 }
 
@@ -559,6 +558,7 @@ filter: drop-shadow(0px 7px 25px rgba(0, 0, 0, 0.3));
 
 .primary-btn:hover{
     background: var(--primary-300);
+    
 }
 
 .alt-btn{
@@ -568,8 +568,19 @@ filter: drop-shadow(0px 7px 25px rgba(0, 0, 0, 0.3));
 
 }
 
-.alt-btn:hover{
-    background: #fff1f1;
+svg{
+    fill: #202020;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+.alt-btn:hover, .alt-btn:hover svg{
+    background: var(--grey);
+    color: #FFF;
+    fill: #fff;
 }
 
 .blue-text{
