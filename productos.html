@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="products_styles.css">
+  </head>
+  <body>
+    
+    <div class="web_container">
+
+      <header class="navbar" id="myNavbar">
+        <div class="navbar-content">
+            <div class="navbar_logo-container active">
+                <img src="img/Logo_Navbar.gif" alt="">
+            </div>
+            <div class="navbar-list">
+                <a href="#nosotros" class="primary-color-text" target="_self">Erika</a>
+                <a href="#servicios" class="primary-color-text">Productos</a>
+                <a href="#ubicacion" class="primary-color-text">Ubicación</a>
+                <a href="#contacto" class="primary-color-text">Contacto</a>
+                
+            </div>
+            <a href="https://wa.me/+56954812836" target="_blank" class="btn whatsapp-btn navbar-cta"><img src="img/icon_whatsapp.svg" alt="">Contactar</a>
+        </div>
+      </header>
+
+      <div id="filter-buttons">
+        <button class="btn" data-category="Show All">Todos</button>
+        <button class="btn" data-category="Bisuteria">Bisuteria</button>
+        <button class="btn" data-category="Mandalas">Mandalas</button>
+        <button class="btn" data-category="Budas">Budas</button>
+        <button class="btn" data-category="Piedras">Piedras</button>
+        <button class="btn" data-category="Cuadros">Cuadros</button>
+      </div>
+      
+      <div id="product-list"></div>
+  
+      <div id="modal">
+        <div id="modal-content">
+            <span id="modal-close">&times;</span>
+            <img id="modal-image"></img>
+            <p><b>Name:</b> <span id="modal-name"></span></p>
+            <p><b>Price:</b> <span id="modal-price"></span></p>
+            <p><b>Description:</b> <span id="modal-description"></span></p>
+            <p><b>Category:</b> <span id="modal-category"></span></p>
+        </div>
+      </div>
+
+
+    </div>
+
+  
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
