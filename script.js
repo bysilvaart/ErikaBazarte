@@ -1,21 +1,58 @@
 class Product {
-    constructor(name, price, description, category, image) {
+    constructor(name, price, shortDescription, longDescription, category, image) {
         this.name = name;
         this.price = price;
-        this.description = description;
+        this.shortDescription = shortDescription;
+        this.longDescription = longDescription;
         this.category = category;
         this.image = `img/productos/${image}`;
     }
-}
+};
 
 const products = [
-    new Product("Collar", "$10.000", "Este es un collar artesanal", "Collares", "img_01.png"),
-    new Product("Product 2", "$20", "Description 2", "Category 2", "img_01.png"),
-    new Product("Product 3", "$30", "Description 3", "Category 3", "img_01.png"),
-    new Product("Product 4", "$40", "Description 4", "Category 4", "img_01.png"),
-    new Product("Polera", "$40.000", "Description 4", "Category 4", "img_01.png"),
+    new Product(
+      "Collar", "$10.000",
+      "Este es un collar artesanal", 
+      "Los mandalas son utilizados como decoración para espacios del interior del hogar como living, habitaciones, área de trabajo, etc. ¿Sabes por qué? Por que son elementos que entregan energía positiva a los espacios de uso diario con sus colores, tamaños y decoraciones extras. Este es un mandala artesanal hecho 100% a mano, tejido a crochet e inspirado en las hojas de un girasol. Es ideal para decorar paredes blancas, espacios donde se necesiten colores más positivos y donde las personas que lo vean puedan recibir una dosis colorida de colores energéticos.", 
+      "Collares", 
+      "img_01.png"
+      ),
+    new Product(
+      "Estatuilla", 
+      "$20", 
+      "Description 2",
+      "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+      "Category 2", 
+      "img_01.png"
+      ),
+    new Product(
+      "Product 3",
+      "$30",
+      "Description 3",
+      "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+      "Category 3",
+      "img_01.png"
+      ),
+    new Product(
+      "Product 4",   
+      "$40", 
+      "Description 4", 
+      "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+      "Category 4", 
+      "img_01.png"
+      ),
+    new Product(
+      "Polera", 
+      "$40.000", 
+      "Description 4", 
+      "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+      "Category 4", 
+      "img_01.png"
+      ),
 
-];
+]
+
+
 
 function createProductList(productArray) {
     const productList = document.createElement("div");
@@ -26,11 +63,13 @@ function createProductList(productArray) {
       productContainer.setAttribute("data-category", product.category);
       productContainer.addEventListener("click", () => {
         const modal = document.getElementById("modal");
-        modal.style.display = "block";
+        modal.style.display = "grid";
         document.getElementById("modal-name").innerText = product.name;
-        document.getElementById("modal-price").innerText = `Price: ${product.price}`;
-        document.getElementById("modal-description").innerText = product.description;
-        document.getElementById("modal-category").innerText = `Category: ${product.category}`;
+        document.getElementById("modal-price").innerText = `${product.price}`;
+        document.getElementById("modal-description").innerText = product.longDescription;
+        //document.getElementById("modal-category").innerText = `Category: ${product.category}`;
+        document.getElementById("modal-image").src = product.image;
+
       });
       const productImage = document.createElement("img");
       productImage.src = product.image;
@@ -42,11 +81,11 @@ function createProductList(productArray) {
       productContainer.appendChild(nameElem);
   
       const priceElem = document.createElement("p");
-      priceElem.innerText = `Price: ${product.price}`;
+      priceElem.innerText = `Desde ${product.price}`;
       productContainer.appendChild(priceElem);
   
       const descElem = document.createElement("p");
-      descElem.innerText = product.description;
+      descElem.innerText = product.shortDescription;
       productContainer.appendChild(descElem);
   
       const categoryElem = document.createElement("p");
@@ -60,7 +99,7 @@ function createProductList(productArray) {
   const productList = createProductList(products);
   document.body.appendChild(productList);
   
-  document.querySelectorAll(".btn").forEach((button) => {
+  document.querySelectorAll(".btn-products").forEach((button) => {
     button.addEventListener("click", () => {
       const category = button.dataset.category;
       const productContainers = document.querySelectorAll(".product-container");
@@ -87,43 +126,30 @@ function createProductList(productArray) {
     });
   });
   
-const modalClose = document.getElementById("modal-close");
-modalClose.addEventListener("click", () => {
-    document.getElementById("modal").style.display = "none";
-});
+  const modalClose = document.getElementById("modal-close");
 
-const modal = document.getElementById("modal");
-const modalContent = document.getElementById("modal-content");
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
-});
+  // Crear un elemento de imagen
+  const closeModalSVG = document.createElement("img");
+  // Establecer la ruta del SVG en el atributo "src"
+  closeModalSVG.src = "img/close-modal.svg";
+  
+  // Agregar el SVG al botón de cierre
+  modalClose.appendChild(closeModalSVG);
+  
+  // Agregar un evento "click" al elemento "modal-close"
+  modalClose.addEventListener("click", () => {
+      // Al hacer clic en el botón, ocultar el modal estableciendo el estilo "display" en "none"
+      document.getElementById("modal").style.display = "none";
+  });
+
+// Agregar un evento "click" al elemento "modal-content"
 modalContent.addEventListener("click", (e) => {
+  // Detener la propagación del evento, para evitar que el modal se cierre si se hace clic en el contenido
   e.stopPropagation();
 });
 
 
-const showModal = (product) => {
-    const modal = document.getElementById("modal");
-    modal.style.display = "block";
 
-    const modalName = document.getElementById("modal-name");
-    modalName.textContent = product.name;
 
-    const modalPrice = document.getElementById("modal-price");
-    modalPrice.textContent = product.price;
-
-    const modalDescription = document.getElementById("modal-description");
-    modalDescription.textContent = product.description;
-
-    const modalCategory = document.getElementById("modal-category");
-    modalCategory.textContent = product.category;
-
-    const modalImage = document.getElementById("modal-image");
-    modalImage.src = product.image;
-    modalImage.alt = product.name;
-    
-};
 
 
