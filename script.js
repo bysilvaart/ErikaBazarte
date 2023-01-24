@@ -15,7 +15,7 @@ const products = [
       "$10.000",
       "Este es un collar artesanal", 
       "Los mandalas son utilizados como decoración para espacios del interior del hogar como living, habitaciones, área de trabajo, etc. ¿Sabes por qué? Por que son elementos que entregan energía positiva a los espacios de uso diario con sus colores, tamaños y decoraciones extras. Este es un mandala artesanal hecho 100% a mano, tejido a crochet e inspirado en las hojas de un girasol. Es ideal para decorar paredes blancas, espacios donde se necesiten colores más positivos y donde las personas que lo vean puedan recibir una dosis colorida de colores energéticos.", 
-      "Collares", 
+      "Bisuteria", 
       "img_01.png"
       ),
     new Product(
@@ -23,7 +23,7 @@ const products = [
       "$20", 
       "Description 2",
       "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
-      "Category 2", 
+      "Budas", 
       "img_01.png"
       ),
     new Product(
@@ -31,7 +31,7 @@ const products = [
       "$30",
       "Description 3",
       "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
-      "Category 3",
+      "Mandalas",
       "img_01.png"
       ),
     new Product(
@@ -39,7 +39,7 @@ const products = [
       "$40", 
       "Description 4", 
       "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
-      "Category 4", 
+      "Piedras", 
       "img_01.png"
       ),
     new Product(
@@ -47,7 +47,7 @@ const products = [
       "$40.000", 
       "Description 4", 
       "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
-      "Category 4", 
+      "Cuadros", 
       "img_01.png"
       ),
 
@@ -107,25 +107,13 @@ function createProductList(productArray) {
       productContainers.forEach((container) => {
         container.style.display =
           container.dataset.category === category || category === "Show All"
-            ? "block"
+            ? "flex"
             : "none";
       });
     });
   });
   
 
-  document.querySelectorAll(".btn").forEach((button) => {
-    button.addEventListener("click", () => {
-      const category = button.dataset.category;
-      const productContainers = document.querySelectorAll(".product-container");
-      productContainers.forEach((container) => {
-        container.style.display =
-          container.dataset.category === category || category === "Show All"
-            ? "block"
-            : "none";
-      });
-    });
-  });
   
   const modalClose = document.getElementById("modal-close");
 

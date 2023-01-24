@@ -12,7 +12,9 @@ body{
 .banner_productos{
   width: 750px;
   height: 190px;
-  background-color: grey;
+  background: url("img/banner_productos.png");
+  background-size: cover;
+  border-radius: 10px;
 }
 .product-container {
     padding: 15px;
