@@ -48,7 +48,8 @@ body{
     display: none; /* Hidden by default */
     place-content: center;
     z-index: 10; /* Sit on top */
-
+    position: absolute;
+    top: 0px;
     width: 100vw; /* Full width */
     height: 100vh; /* Full height */
     overflow: auto; /* Enable scroll if needed */

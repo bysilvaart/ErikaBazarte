@@ -1,17 +1,18 @@
 class Product {
-    constructor(name, price, shortDescription, longDescription, category, image) {
-        this.name = name;
-        this.price = price;
-        this.shortDescription = shortDescription;
-        this.longDescription = longDescription;
-        this.category = category;
-        this.image = `img/productos/${image}`;
-    }
+  constructor(name, price, shortDescription, longDescription, category, image) {
+      this.name = name;
+      this.price = price;
+      this.shortDescription = shortDescription;
+      this.longDescription = longDescription;
+      this.category = category;
+      this.image = `img/productos/${image}`;
+  }
 };
 
 const products = [
     new Product(
-      "Collar", "$10.000",
+      "Collar",
+      "$10.000",
       "Este es un collar artesanal", 
       "Los mandalas son utilizados como decoración para espacios del interior del hogar como living, habitaciones, área de trabajo, etc. ¿Sabes por qué? Por que son elementos que entregan energía positiva a los espacios de uso diario con sus colores, tamaños y decoraciones extras. Este es un mandala artesanal hecho 100% a mano, tejido a crochet e inspirado en las hojas de un girasol. Es ideal para decorar paredes blancas, espacios donde se necesiten colores más positivos y donde las personas que lo vean puedan recibir una dosis colorida de colores energéticos.", 
       "Collares", 
