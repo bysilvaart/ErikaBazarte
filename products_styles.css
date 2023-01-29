@@ -94,6 +94,10 @@ body{
     cursor: pointer;
   }
 
+  #modal-name{
+    font-size: 40px;
+  }
+
   #modal-image{
     width: 400px;
     height: 400px;
