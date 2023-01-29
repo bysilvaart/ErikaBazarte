@@ -50,6 +50,70 @@ const products = [
       "Cuadros", 
       "img_01.png"
       ),
+      new Product(
+      "Polera", 
+      "$40.000", 
+      "Description 4", 
+      "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+      "Cuadros", 
+      "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Piedras", 
+        "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Cuadros", 
+        "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Cuadros", 
+        "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Mandalas", 
+        "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Cuadros", 
+        "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Cuadros", 
+        "img_01.png"
+      ),
+      new Product(
+        "Polera", 
+        "$40.000", 
+        "Description 4", 
+        "Esta es la descripcion larga del producto. sirve para dar mas detalles sobre el producto",
+        "Cuadros", 
+        "img_01.png"
+      ),
 
 ]
 
