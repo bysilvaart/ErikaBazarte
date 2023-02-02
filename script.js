@@ -145,18 +145,15 @@ function createProductList(productArray) {
       nameElem.innerText = product.name;
       productContainer.appendChild(nameElem);
   
-      const priceElem = document.createElement("p");
-      priceElem.innerText = `Desde ${product.price}`;
-      productContainer.appendChild(priceElem);
-  
+      
       const descElem = document.createElement("p");
       descElem.innerText = product.shortDescription;
       productContainer.appendChild(descElem);
-  
-      const categoryElem = document.createElement("p");
-      categoryElem.innerText = `Category: ${product.category}`;
-      productContainer.appendChild(categoryElem);
-  
+      
+      const priceElem = document.createElement("h4");
+      priceElem.innerText = `Desde ${product.price}`;
+      productContainer.appendChild(priceElem);
+
       productList.appendChild(productContainer);
     });
     return productList;

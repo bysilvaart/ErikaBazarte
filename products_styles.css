@@ -35,9 +35,39 @@ body{
 .product-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
     background-color: #fff;
     width: 150px;
+}
+
+.product-container h3{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #303030;
+
+  padding-top: 8px;
+}
+
+.product-container h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #303030;
+}
+
+
+.product-container p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #9E9EA7;
 }
 
 .product-container img{
@@ -51,6 +81,7 @@ body{
     width: 100%;
     max-width: 660px;
     gap: 20px;
+    row-gap: 40px;
 }
 
 #filter-buttons{
