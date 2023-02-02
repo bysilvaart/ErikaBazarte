@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -13,6 +16,9 @@ body{
     align-items: center;
     place-content: start;
     padding-top: 120px;
+
+    font-family: 'Inter', sans-serif;
+
 }
 
 .web_container{
@@ -83,7 +89,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
+    padding: 16px;
     gap: 45px;
     border-radius: 16px;
 
@@ -110,12 +116,72 @@ body{
   }
 
   #modal-name{
-    font-size: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  #modal-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #808080;
+  }
+  .modal_stock-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .modal_disponibilidad{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #03A300;
+  }
+
+  .modal_stock{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #808080;
   }
 
   #modal-image{
     width: 400px;
     height: 400px;
+  }
+
+  .modal_price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 10px;
+    color: #303030;
+  }
+
+  .row_envio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    width: 100%;
+
+    border: 4px dashed #1DC702;
+    border-radius: 16px;
+  }
+
+  .row_envio p{
+    width: 640px;
+    text-align: center;
   }
 
   .product-texts{
