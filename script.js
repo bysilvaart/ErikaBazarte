@@ -158,6 +158,7 @@ function createProductList(productArray) {
     });
     return productList;
   }
+  
   const productList = createProductList(products);
   document.body.appendChild(productList);
   
@@ -190,6 +191,7 @@ function createProductList(productArray) {
   modalClose.addEventListener("click", () => {
       // Al hacer clic en el botón, ocultar el modal estableciendo el estilo "display" en "none"
       document.getElementById("modal").style.display = "none";
+
   });
 
 // Agregar un evento "click" al elemento "modal-content"
