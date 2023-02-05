@@ -36,8 +36,10 @@ body{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    background-color: #fff;
-    width: 150px;
+    background-color: #fafafa;
+    width: auto;
+    padding: 10px 10px 15px 10px;
+    border-radius: 15px;
 }
 
 .product-container h3{
@@ -73,13 +75,15 @@ body{
 .product-container img{
   width: 150px;
   height: 150px;
+  border-radius: 10px;
 }
 
 #product-list{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 660px;
+    max-width: 740px;
+    justify-content: center;
     gap: 20px;
     row-gap: 40px;
 }
@@ -95,7 +99,32 @@ body{
     border-radius: 10px; 
     border-style: none;
     cursor: pointer;
+    background-color: white;
+
+  
 }
+
+.btn-products p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #9E9EA7;
+}
+
+.btn-products p:hover{
+  color: black;
+  font-weight: 600;
+}
+
+
+.btn-active p{
+  color: black;
+  font-weight: 700;
+  border-bottom: #E30613 5px solid;
+}
+
 
 #modal {
     display: none;
