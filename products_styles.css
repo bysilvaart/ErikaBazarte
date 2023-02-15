@@ -63,9 +63,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    background-color: #fafafa;
     width: auto;
-    padding: 10px 10px 15px 10px;
+    padding: 0;
     border-radius: 15px;
 }
 
@@ -100,8 +99,8 @@ body{
 }
 
 .product-container img{
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 320px;
   border-radius: 10px;
 }
 
@@ -109,15 +108,17 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    max-width: 740px;
+    max-width: 1080px;
     justify-content: center;
-    gap: 20px;
-    row-gap: 40px;
+    gap: 25px;
+    row-gap: 50px;
 }
 
 #filter-buttons{
     display: flex;
     gap: 10px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .btn-products{
@@ -361,6 +362,12 @@ body{
 
     #filter-buttons{
       flex-wrap: wrap;
+    }
+
+    .product-container img{
+      width: 160px;
+      height: 200px;
+      border-radius: 10px;
     }
 
     .web_container{
