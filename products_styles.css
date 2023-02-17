@@ -265,7 +265,7 @@ body{
 
   #modal-image{
     width: 400px;
-    height: 400px;
+    height: 510px;
   }
 
   .modal_price{
@@ -289,7 +289,7 @@ body{
   }
 
   .row_envio p{
-    width: 640px;
+    width: 100%;
     text-align: center;
   }
 
@@ -308,17 +308,16 @@ body{
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
+    width: 100%;
   }
 
   .product-info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
     width: 430px;
-    height: 400px;
   }
 
   .buttons_row{
@@ -335,7 +334,6 @@ body{
     align-items: flex-start;
     padding: 0px;
     width: 860px;
-    height: 400px;
     justify-content: space-between;
   }
 
